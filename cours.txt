@@ -1,0 +1,72 @@
+1996  ASP (classique)  vbScript
+2002  ASP.NET (WebForms)  + .NET Framework 
+2008  ASP.NET MVC + Entity Framework
+2011  ASP.NET Web Pages (Razor)
+2016  ASP.NET Core 1.0   + .NET Framework core 1.0
+
+La version core inclut: MVC, WebPages, Web API, MAIS pas WebForms
+
+Versions courantes de ASP.NET Classique:
+MVC        5.3
+Web API    2.3
+Web Pages  3.3
+Web Forms  4.6
+Entity Framework   6.1.3
+
+Versions Courantes de ASP.NET Core:
+MVC        1.1
+Web API    1.1
+Web Pages  1.1
+Web Forms  N/D
+Entity Framework   1.1
+
+
+
+        public void Page_PreInit(object sender, EventArgs e)
+   ---  public void Page_Init(object sender, EventArgs e)
+        public void Page_InitComplete(object sender, EventArgs e)
+
+      + Load viewState (initialise les controles)
+
+        public void Page_PreLoad(object sender, EventArgs e)
+   ---  public void Page_Load(object sender, EventArgs e)
+        public void Page_LoadComplete(object sender, EventArgs e)
+
+      + Evenements du postback (change, click, etc)
+
+   ---  public void Page_PreRender(object sender, EventArgs e)
+        public void Page_PreRenderComplete(object sender, EventArgs e)
+
+        public void Page_SaveStateComplete(object sender, EventArgs e)
+
+      + Render qui génère le html et le retourne
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

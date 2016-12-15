@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MonSite.master.cs" Inherits="AppPrincipale.MonSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1>Application Principale</h1>
+        <h2>Bienvenue</h2>
+    <div>
+        <asp:ContentPlaceHolder ID="contenu" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <h6>Copyright <asp:Label runat="server" ID="lblAnnee"></asp:Label></h6>
+    </form>
+</body>
+</html>

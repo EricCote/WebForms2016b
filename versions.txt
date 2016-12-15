@@ -1,0 +1,43 @@
+.NET Framework
+1. Librairies de programmation
+   ASP.NET
+   Windows Forms
+   XML
+   WCF
+   WPF
+   WF
+   Entity Framework
+   ADO.NET
+2. Environnement d'exécution
+   CLR (Common Language Runtime)
+   Chargement DLL
+   Gestion Mémoire (garbage collection)
+   Gérer type safety (pas de buffer overflow)
+   Gestion des threads
+   Gestion des erreurs (exceptions)
+   Gestion de la sécurité
+   Interop (COM ou Win32 API)
+
+
+1.0     2002    CLR + Librairies
+1.1     2003    CLR + Librairies
+2.0     2005    CLR + Librairies
+3.0     2006          Librairies Additionnelles
+3.5     2008          Librairies Additionnelles
+
+4.0     2010    CLR + Librairies
+4.5     2012    CLR + Librairies (écrase la version 4.0)
+4.5.1   2013    CLR + Librairies (écrase la version 4.0)
+4.6     2015    CLR + Librairies (écrase la version 4.0)
+4.6.2   2017    CLR + Librairies (écrase la version 4.0)
+
+
+
+.NET Core   1.0  2016 (juin)      (installation au besoin)
+            1.1  2016 (décembre)
+
+
+   
+   
+
+

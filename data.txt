@@ -1,0 +1,64 @@
+1996  ADO
+
+2002  ADO.NET
+      - Connecté    (Connection, Command, Parameter, DataReader)
+                    (DataAdapter)
+      - Déconnecté  (DataSet, DataTables, DataColumns, DataRows, Constraints)
+
+2009 Entity Framework
+     ORM (Object Relationnal Mapper)
+     EDMX  (Entity Data Model)  (fichier xml qui décrit le mapping entre 
+                                 le code et la bd)
+     Code First  (le code est mappé à la bd avec 
+                  des conventions et des attributs)
+
+
+Data Providers:  Ensembles de classes pour travailler avec des bd. 
+                 classes pour le mode connecté d'ADO.NET et aussi pour le
+                 Entity Framework
+
+ADO.NET DataProvider:
+SqlClient  (Sql Server)
+Oracle     (oracle)   (Obsolete)  (ODP de orcacle)
+OleDb      (OleDb)
+Odbc       (ODBC)
+
+-------
+Oracle
+MySQL
+PostGres
+DB2
+Etc
+
+
+Entity Framework Data Provider
+SqlClient
+ODP (limité, mais plus puissant avec le temps)
+MySql
+
+
+-----------------
+
+
+.Config
+
+
+
+C:\windows\microsoft.net\framework\v4.0.xxx\config
+Machine.config  (configuration globale)
+Web.Config      (ASP.NET Configuration globale)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
