@@ -41,5 +41,38 @@ namespace AppPrincipale
             Trace.Write("le selectMethod est appelé!");
             return db.Abonnements;
         }
+
+        // The id parameter name should match the DataKeyNames value set on the control
+        public void grdAbonnes_UpdateItem(int AbonnementId)
+        {
+            AppPrincipale.Models.Abonnement ab = null;
+            ab = db.Abonnements.Find(AbonnementId);
+ 
+            if (ab == null)
+            {
+                // The item wasn't found
+                ModelState.AddModelError("", String.Format("Item with id {0} was not found", AbonnementId));
+                return;
+            }
+            TryUpdateModel(ab);
+            if (ModelState.IsValid)
+            {
+                db.SaveChanges();
+            }
+        }
+
+        // The id parameter name should match the DataKeyNames value set on the control
+        public void grdAbonnes_DeleteItem(int AbonnementId)
+        {
+            Abonnement ab = db.Abonnements.Find(AbonnementId);
+            if (ab == null)
+            {
+                // The item wasn't found
+                ModelState.AddModelError("", String.Format("Item with AbonnementId {0} was not found", AbonnementId));
+                return;
+            }
+            db.Abonnements.Remove(ab);
+            db.SaveChanges();
+        }
     }
 }

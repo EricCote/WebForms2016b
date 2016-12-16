@@ -13,6 +13,24 @@ namespace AppPrincipale {
     public partial class SiteMaster {
         
         /// <summary>
+        /// MySiteMap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SiteMapDataSource MySiteMap;
+        
+        /// <summary>
+        /// BootstrapMenu1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AppPrincipale.Controls.BootstrapMenu BootstrapMenu1;
+        
+        /// <summary>
         /// MainContent control.
         /// </summary>
         /// <remarks>

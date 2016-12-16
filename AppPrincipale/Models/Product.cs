@@ -37,6 +37,8 @@ namespace AppPrincipale.Models
         public short ReorderPoint { get; set; }
 
         [Column(TypeName = "money")]
+        [DataType(DataType.Currency)]
+        [Display(Name="Coût")]
         public decimal StandardCost { get; set; }
 
         [Column(TypeName = "money")]
@@ -79,7 +81,7 @@ namespace AppPrincipale.Models
         public DateTime ModifiedDate { get; set; }
 
    
-        [Column("ProductSubcategory")]
+        [ForeignKey("ProductSubcategoryID")]
         public virtual Subcategory Subcategory { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

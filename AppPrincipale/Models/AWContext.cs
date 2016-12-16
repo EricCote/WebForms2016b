@@ -13,10 +13,10 @@ namespace AppPrincipale.Models
         }
 
         public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<Category> ProductCategories { get; set; }
-        public virtual DbSet<Photo> ProductPhotoes { get; set; }
-        public virtual DbSet<ProductPhoto> ProductProductPhotoes { get; set; }
-        public virtual DbSet<Subcategory> ProductSubcategories { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Photo> Photos { get; set; }
+        public virtual DbSet<ProductPhoto> ProductPhotos { get; set; }
+        public virtual DbSet<Subcategory> Subcategories { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

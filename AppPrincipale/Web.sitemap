@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="General"  description="General stuff" >
+        <siteMapNode url="" title="Home"  description="going to the top"  >
+          <siteMapNode url="~/about" title="About"  description="About us" />
+          <siteMapNode url="~/contact" title="Contact"  description="Contactez-nous" />    
+        </siteMapNode>  
+        <siteMapNode url="" title="Infolettre"  description="Infolettre"  >
+          <siteMapNode url="~/Infolettre/infolettre2" title="Abonnez-vous"  description="Abonne!" />
+          <siteMapNode url="~/Infolettre/ListeAbonnes2" title="Liste"  description="Liste des Abonnés" />    
+        </siteMapNode>
+      <siteMapNode url="" title="AdventureWorks"  description="AdventureWorks"  >
+        <siteMapNode url="~/adventureWorks/Produits" title="Produits"  description="Liste des produits avec pagination" />
+        <siteMapNode url="" title="wow"  description="Contactez-nous" />
+      </siteMapNode>
+    </siteMapNode>  
+</siteMap>

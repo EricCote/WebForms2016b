@@ -1,4 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AppPrincipale.SiteMaster" %>
+<%@ Register tagPrefix="afi" Assembly="AppPrincipale"  namespace="AppPrincipale.Controls" %>
+
 
 <!DOCTYPE html>
 
@@ -49,12 +51,31 @@
                     <a class="navbar-brand" runat="server" href="~/">Application name</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <asp:SiteMapDataSource ShowStartingNode="false" runat="server" ID="MySiteMap"></asp:SiteMapDataSource>
+                    <afi:BootstrapMenu  ID="BootstrapMenu1" DataSourceID="MySiteMap" runat="server" HighlightActive="True">
+                       <%-- 
+                        <Items>
+                            <asp:MenuItem Text="Home" NavigateUrl="#" />
+                            <asp:MenuItem Text="About" NavigateUrl="#" />
+                            <asp:MenuItem Text="Contact" NavigateUrl="#" />
+                            <asp:MenuItem Text="Drop Down">
+                                <asp:MenuItem Text="Action" NavigateUrl="#" />
+                                <asp:MenuItem Text="Another action" NavigateUrl="#" />
+                                <asp:MenuItem Text="Bootstrap Menu" NavigateUrl="~/Controls/BootstrapMenuTests.aspx" />
+                                <asp:MenuItem Text="Something else here" NavigateUrl="#" />
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Help" NavigateUrl="#" />
+                            <asp:MenuItem Text="Nothing" />
+                        </Items>--%>
+
+                    </afi:BootstrapMenu>
+<%--                    <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="~/Infolettre">Infolettre</a></li>
-                    </ul>
+                        <li><a runat="server" href="~/Infolettre2">Infolettre</a></li>
+                        <li><a runat="server" href="~/ListeAbonnes2">Abonnés</a></li>
+                    </ul>--%>
                     <asp:LoginView runat="server" ViewStateMode="Disabled" Visible="false" >
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
