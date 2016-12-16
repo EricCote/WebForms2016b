@@ -23,8 +23,10 @@ namespace AppPrincipale.Models
 
         public DateTime ModifiedDate { get; set; }
 
+        [ForeignKey("ProductID")]
         public virtual Product Product { get; set; }
 
+        [ForeignKey("PhotoID")]
         public virtual Photo Photo { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace AppPrincipale.Models
         public AwContext()
             : base("name=AW")
         {
+           
         }
 
         public virtual DbSet<Product> Products { get; set; }

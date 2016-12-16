@@ -32,6 +32,7 @@ namespace AppPrincipale.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Product> Products { get; set; }
 
+        [ForeignKey("CategoryID")]
         public virtual Category Category { get; set; }
     }
 }
