@@ -19,10 +19,12 @@ namespace AppPrincipale.Models
 
         [Required]
         [StringLength(50)]
+        [Display(Name="Nom")]
         public string Name { get; set; }
 
         [Required]
         [StringLength(25)]
+        [Display(Name = "No Produit")]
         public string ProductNumber { get; set; }
 
         public bool MakeFlag { get; set; }
@@ -30,6 +32,7 @@ namespace AppPrincipale.Models
         public bool FinishedGoodsFlag { get; set; }
 
         [StringLength(15)]
+        [Display(Name = "Couleur")]
         public string Color { get; set; }
 
         public short SafetyStockLevel { get; set; }
@@ -42,6 +45,8 @@ namespace AppPrincipale.Models
         public decimal StandardCost { get; set; }
 
         [Column(TypeName = "money")]
+        [DataType(DataType.Currency)]
+        [Display(Name = "Prix")]
         public decimal ListPrice { get; set; }
 
         [StringLength(5)]

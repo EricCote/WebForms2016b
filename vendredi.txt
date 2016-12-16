@@ -1,0 +1,98 @@
+Javascript et ajax
+===================
+
+Javascript:  Langage utilisé sur les pages web
+
+
+AJAX: Asynchronous Javascript and Xml
+
+XmlHttpRequest: Object qui permet d'aller chercher des 
+                données sur un serveur.
+
+IE3 dans le temps du vieux OWA (Outlook web Access)
+
+2001:  Google Maps (avec Ajax)
+
+--------
+
+ViewState est problématique.
+
+=========================
+
+STATE
+
+Cookie : fichier texte qui contient de l'information qui est 
+         transféré entre le client et le serveur.
+        -limité à 2K
+        -falsifiable
+
+        -temporaire "transient", reste en mémoire. ex: no session
+        -permanents, sur le disque jusqu'à une date d'expiration.
+
+
+Session state: Conserve les données sur un espace mémoire pour chaque
+               visiteur.  Reconnait le visiteur à son numéro de
+               session dans un cookie.
+
+Application state: conserve des informations globales
+
+-----------------------------------
+SECURITE
+
+
+Authentication (identification)
+Authorization  (autorisation)
+
+
+identification à travers 3 grandes technologies
+-IIS  (Windows Authentication) 
+-Web forms (cookie spécial avec token pour s'identifier)
+-Sur mesure (custom) (code pour s'identifier)
+  -Identity Framework  
+    - database DefaultConnection
+
+IPrincipal: Représentation objet de l'usager.
+
+Role: Représentation d'un regroupement d'usagers
+
+Autorisation: liste de permissions associés à un role ou principal
+
+-------------------------------------------------------------
+
+  
+Exemples de Framework Javascript pour remplacer 
+technologie de generation server
+
+Knockout
+React
+Angular
+Aurelia
+
+etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.ModelBinding;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -29,9 +30,11 @@ namespace AppPrincipale.AdventureWorks
         //     int startRowIndex
         //     out int totalRowCount
         //     string sortByExpression
-        public IQueryable<AppPrincipale.Models.Product> grdProduits_GetData()
+        public IQueryable<AppPrincipale.Models.Product> grdProduits_GetData(
+               [Control]int? drpSubcategory, [Control]int? drpCategory)
         {
-            return db.Products.Include("Subcategory");
+            return db.Products.Include("Subcategory").Where(
+                p => p.ProductSubcategoryID==drpSubcategory );
         }
 
         public IQueryable<AppPrincipale.Models.Category> GetCategories()
@@ -39,7 +42,7 @@ namespace AppPrincipale.AdventureWorks
             return db.Categories;
         }
 
-        public IQueryable<AppPrincipale.Models.Subcategory> GetSubcategories([System.Web.ModelBinding.Control]int? drpCategory)
+        public IQueryable<AppPrincipale.Models.Subcategory> GetSubcategories([Control]int? drpCategory)
         {
             if (drpCategory == null) return null;
             return db.Subcategories.Where(s => s.CategoryID == drpCategory);
