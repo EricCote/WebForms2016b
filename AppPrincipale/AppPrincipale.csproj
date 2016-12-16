@@ -176,6 +176,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AdventureWorks\Details.aspx" />
+    <Content Include="AdventureWorks\ProduitsFiltre.aspx" />
     <Content Include="AdventureWorks\Produits.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -394,6 +395,13 @@
     </Compile>
     <Compile Include="AdventureWorks\Details.aspx.designer.cs">
       <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdventureWorks\ProduitsFiltre.aspx.cs">
+      <DependentUpon>ProduitsFiltre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdventureWorks\ProduitsFiltre.aspx.designer.cs">
+      <DependentUpon>ProduitsFiltre.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdventureWorks\Produits.aspx.cs">
       <DependentUpon>Produits.aspx</DependentUpon>

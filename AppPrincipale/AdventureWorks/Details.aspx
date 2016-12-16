@@ -16,7 +16,11 @@
         >
         <Fields>
             <asp:CommandField ShowEditButton="true" />
-            <asp:DynamicField DataField="Subcategory_Name" />
+            <asp:TemplateField HeaderText="Suous-category" >
+                <ItemTemplate>
+                    <%# Item.Subcategory.Name %>
+                </ItemTemplate>
+            </asp:TemplateField>
         </Fields>
 
     </asp:DetailsView>

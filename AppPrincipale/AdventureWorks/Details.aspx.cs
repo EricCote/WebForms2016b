@@ -28,7 +28,7 @@ namespace AppPrincipale.AdventureWorks
         // or be decorated with a value provider attribute, e.g. [QueryString]int id
         public AppPrincipale.Models.Product DetProduit_GetItem([QueryString]int ProductID)
         {
-            return db.Products.Find(ProductID);
+            return db.Products.Include("Subcategory").Where(p => p.ProductID ==  ProductID).FirstOrDefault();
         }
 
         // The id parameter name should match the DataKeyNames value set on the control
